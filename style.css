@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+}
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-gray);
+}
+ul {
+  list-style: none;
+}
+main {
+  max-width: 900px;
+  width: 90vw;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  margin: 5rem auto;
+}
+.join-us-wrapper {
+  padding: 2rem;
+  height: 225px;
+  border-radius: 0.3rem;
+}
+.join-us-wrapper__primary-heading {
+  color: var(--cyan);
+  padding-bottom: 1.4rem;
+}
+.join-us-wrapper__secondary-heading {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  padding-bottom: 1.4rem;
+}
+.join-us-wrapper__text {
+  color: var(--grayish-blue);
+  font-weight: 700;
+}
+.know-us-wrapper {
+  width: 100%;
+  display: flex;
+}
+.know-us-wrapper__subscribe-container {
+  width: 50%;
+  height: 250px;
+  background-color: #2bb3b1;
+  padding: 2rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.know-us-wrapper__why-us-container {
+  width: 50%;
+  height: 250px;
+  background-color: #4abebd;
+  border-bottom-right-radius: 0.3rem;
+  padding: 2rem;
+}
+.subscribe-container__primary-heading {
+  color: #e9fcfd;
+}
+.why-us-container__primary-heading {
+  color: #e9fcfd;
+}
+.subscribe-container__price-per-month {
+  width: 180px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-per-month__subscribtion {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e9fcfd;
+}
+.subscribtion-per-month {
+  color: #c5d8dd;
+}
+.subscribe-container__text {
+  color: #f2f2f2;
+  letter-spacing: 1px;
+}
+.subscribe-container__btn {
+  margin-top: 1.4rem;
+  width: 270px;
+  border: none;
+  padding: 1rem;
+  background-color: var(--bright-yellow);
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.why-us-container__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  color: #c5d8dd;
+}
+@media (max-width: 700px) {
+  .know-us-wrapper {
+    flex-direction: column;
+  }
+  .know-us-wrapper__subscribe-container {
+    width: 100%;
+  }
+  .know-us-wrapper__why-us-container {
+    width: 100%;
+  }
+}
